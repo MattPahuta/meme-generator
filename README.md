@@ -5,7 +5,7 @@ This is solution code to the Scrimba Frontend Career Path project, Build a Meme 
 ## Table of contents
 
 - [Overview](#overview)
-  - [The requirements](#the-requirements)
+  - [React concepts](#react-concepts)
   - [Screenshot](#screenshot)
   - [Links](#links)
 - [My process](#my-process)
@@ -15,10 +15,14 @@ This is solution code to the Scrimba Frontend Career Path project, Build a Meme 
 
 ## Overview
 
-### The requirements
+### React concepts
+This project features the use of the following React hooks and concepts
 
-- Develop using React
-- Follow provided Figma design comp
+- Event listeners
+- State
+- Conditional rendering
+- Forms
+- Side effects
 
 ### Screenshot
 
@@ -26,18 +30,13 @@ This is solution code to the Scrimba Frontend Career Path project, Build a Meme 
 
 ### Links
 
-- [Scrimba Scrim URL]()
+- [Scrimba Scrim URL](https://scrimba.com/scrim/co6a4409bb0f262db4763763f)
 - [Live Site URL]()
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 
 ### Useful resources

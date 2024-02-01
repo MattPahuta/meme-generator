@@ -1,16 +1,16 @@
 // import memesData from "../memesData"
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Meme() {
 
-  const [meme, setMeme] = React.useState({
+  const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
     randomImage: "http://i.imgflip.com/1bij.jpg"
   })
 
-  const [allMemes, setAllMemes] = React.useState([])
+  const [allMemes, setAllMemes] = useState([])
 
   // useEffect hook for API call
   useEffect(() => {
@@ -20,7 +20,6 @@ export default function Meme() {
   }, [])
 
   function getMemeImage() {
-    // const memesArray = allMemes.data.memes;
     const randomNumber = Math.floor(Math.random() * allMemes.length);
     const url = allMemes[randomNumber].url;
     setMeme(prevMeme => {
@@ -40,7 +39,7 @@ export default function Meme() {
   }
 
   return (
-    <main>
+    <main className="meme-container">
       <div className="form">
         <div>
           <label htmlFor="top-text">Add Top Text</label>
@@ -70,8 +69,8 @@ export default function Meme() {
       </div>
       <div className="meme">
         <img src={meme.randomImage} className="meme--image" alt="" />
-        <h2 className="meme--text top">{meme.topText}</h2>
-        <h2 className="meme--text bottom">{meme.bottomText}</h2>
+        <h2 className="meme-text top">{meme.topText}</h2>
+        <h2 className="meme-text bottom">{meme.bottomText}</h2>
       </div>
     </main>
   )
