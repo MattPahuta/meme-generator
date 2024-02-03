@@ -4,7 +4,10 @@
 
 body {
   font-family: "Karla", sans-serif;
+  font-size: 1rem;
   margin: 0;
+  background: #F9F9F9;
+  color: #07020D;
 }
 
 main {
@@ -13,12 +16,11 @@ main {
 
 .meme-container {
   margin-inline: auto;
-  max-width: 720px;
+  max-width: 640px;
 }
 
 .header {
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
-  color: white;
+  background: #8B8BAE;
   padding: 1.5rem
 }
 
@@ -38,7 +40,6 @@ main {
   font-size: 1.75rem;
   font-weight: 400;
   margin-right: auto;
-  color: #000000;
 }
 
 .header-project {
@@ -76,12 +77,20 @@ main {
   min-height: 44px;
   grid-column: span 2;
   font-size: 1rem;
-  font-family: "Karla", sans-serif;
+  font-family: inherit;
   border-radius: 5px;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
-  color: white;
+  background: #232ED1;
+  color: #fff;
   border: none;
+  transition: 220ms all ease-in-out;
   cursor: pointer;
+}
+
+.form-button:hover,
+.form-button:focus-visible {
+  outline-style: solid;
+  outline-color: transparent;
+  box-shadow: 0 0 0 4px #07020D;
 }
 
 .meme {
