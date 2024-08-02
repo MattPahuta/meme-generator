@@ -1,5 +1,3 @@
-// import memesData from "../memesData"
-
 import { useEffect, useState } from "react";
 
 export default function Meme() {
@@ -17,7 +15,8 @@ export default function Meme() {
     fetch("https://api.imgflip.com/get_memes")
       .then(res => res.json())
       .then(data => setAllMemes(data.data.memes))
-  }, [])
+  }, [
+  ])
 
   function getMemeImage() {
     const randomNumber = Math.floor(Math.random() * allMemes.length);

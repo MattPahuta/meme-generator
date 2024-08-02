@@ -26,12 +26,12 @@ This project features the use of the following React hooks and concepts
 
 ### Screenshot
 
-![]()
+![](./project-ss.png)
 
 ### Links
 
 - [Scrimba Scrim URL](https://scrimba.com/scrim/co6a4409bb0f262db4763763f)
-- [Live Site URL]()
+- [Live Site URL](https://mellow-beijinho-d54ea2.netlify.app/)
 
 ## My process
 
